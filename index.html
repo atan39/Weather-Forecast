@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
+
 <body>
-    
+    <h1>
+        Weather Dashboard ☃️
+    </h1>
+    <div class="container">
+      <form id="search-form">
+        <input type="text" id="city" placeholder="Search for a city">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="search-history">
+        <h2>Search History ⛈️</h2>
+        <ul id="history-data"></ul>
+      </div>
+      <div id="current-weather">
+        <h2>Current Weather 🌞</h2>
+        <div id="current-weather-data"></div>
+      </div>
+      <div id="forecast">
+        <h2>5-Day Forecast 🌤️</h2>
+        <div id="forecast-data"></div>
+      </div>
+    </div>
     <script src="./assets/script.js"></script>
-</body>
+  </body>
 </html>
